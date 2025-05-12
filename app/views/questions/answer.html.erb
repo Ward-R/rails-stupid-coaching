@@ -1,10 +1,13 @@
-<h1>Stupid Coaching</h1>
+<div>
+  <h1>Stupid Coaching</h1>
+  <div class="container mx-0" >
+    <h2 class="fw-normal fs-5" ><%= params[:question] %></h2>
+    <p>- You</p>
+  </div>
 
-<h2><%= params[:question] %></h2>
-<p>- You</p>
-
-<h2><%= @answer %></h2>
-
-<p>- Coach</p>
-
-<%= link_to "Ask another question", ask_path %>
+  <div class="container bg-warning mx-0" >
+    <h2 class="fs-5"><%= @answer %></h2>
+    <p>- Coach</p>
+  </div>
+  <%= link_to "Ask another question", ask_path %>
+</div>
